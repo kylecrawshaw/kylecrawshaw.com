@@ -32,7 +32,7 @@
             </div>
 
             <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
-              <p class="navbar-text">
+              <p class="navbar-text navbar-right">
                 <a href="https://twitter.com/kylecrawshaw" title="@kylecrawshaw on Twitter" alt="twitter link" rel="me">
                   <i class="fa fa-lg fa-twitter" alt="twitter-icon"></i>
                 </a>
@@ -46,12 +46,12 @@
                 </a>
                 {% if this.path %}
                   &nbsp;
-                  <a href="https://github.com/kylecrawshaw/kylecrawshaw.com/tree/master/content{{ this.path.split('@')[0]}}/contents.lr" title="View source for this page">
+                  <a href="https://github.com/kylecrawshaw/kylecrawshaw.com/tree/master/content{{ this.path.split('@')[0]}}/contents.lr" title="View source on Github">
                     <i class="fa fa-code"></i>
                   </a>
                 {% endif %}
               </p>
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-left">
                 {% set nav_links = [['/blog', 'Blog'],['/projects', 'Projects'],['/about', 'About']] %}
                 {% for href, title in nav_links %}
                   <li{% if this.is_child_of(href) %} class="active"{% endif%}>
@@ -67,5 +67,10 @@
     <div class="page container">
       {% block body %}{% endblock %}
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted" align="center">Design, Maintained and Built by Kyle Crawshaw</p>
+      </div>
+    </footer>
   </body>
 </html>
