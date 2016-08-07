@@ -28,11 +28,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <ul class="nav navbar-nav">
-                <li{% if this._path == "/" or this.is_child_of("/blog") %} class="active"{% endif%}>
-                  <a class="navbar-brand" href="/">Kyle Crawshaw</a>
-                </li>
-              </ul>
+              <a class="navbar-brand" href="/">Kyle Crawshaw</a>
             </div>
 
             <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
@@ -56,6 +52,9 @@
                 {% endif %}
               </p>
               <ul class="nav navbar-nav navbar-left">
+                <li{% if this._path == "/" or this.is_child_of("/blog") %} class="active"{% endif%}>
+                  <a href="/">Blog</a>
+                </li>
                 {% set nav_links = [['/projects', 'Projects'],['/about', 'About']] %}
                 {% for href, title in nav_links %}
                   <li{% if this.is_child_of(href) %} class="active"{% endif%}>
