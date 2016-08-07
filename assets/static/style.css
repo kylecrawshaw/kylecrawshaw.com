@@ -6,6 +6,10 @@
     color: #000;
 }
 
+.social-icons {
+    padding-right: 30px;
+}
+
 html {
   position: relative;
   min-height: 100%;
