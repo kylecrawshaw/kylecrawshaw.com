@@ -1,3 +1,5 @@
 [![Build Status](https://travis-ci.org/kylecrawshaw/kylecrawshaw.com.svg?branch=master)](https://travis-ci.org/kylecrawshaw/kylecrawshaw.com)
 # kylecrawshaw.com
-Lektor files for kylecrawshaw.com
+
+This repo contains the configuration and template files for kylecrawshaw.com. The
+site is built using [Lektor](https://github.com/lektor/lektor).
