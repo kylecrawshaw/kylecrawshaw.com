@@ -4,17 +4,18 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-  {% for child in this.pagination.items %}
-    {{ render_blog_post(child, from_index=true) }}
+  {% for child in site.query('/blog') %}
+    {% if child._model == "blog-post" %}
+      {{ render_blog_post(child, from_index=true) }}
+    {% endif %}
   {% endfor %}
 
-  <!-- {{ render_pagination(this.pagination) }} -->
   <nav aria-label="...">
     <ul class="pager">
       {% if this.pagination.has_prev %}
         <li class="previous">
           <a href="{{ this.pagination.prev|url }}">
-            <span aria-hidden="true">&larr;</span> Newer
+            <span aria-hidden="true">&larr;</span> Previous
           </a>
         </li>
       {% endif %}
@@ -22,7 +23,7 @@
       {% if this.pagination.has_next %}
         <li class="next">
           <a href="{{ this.pagination.next|url }}">
-            Older <span aria-hidden="true">&rarr;</span>
+            Next <span aria-hidden="true">&rarr;</span>
           </a>
         </li>
       {% endif %}
