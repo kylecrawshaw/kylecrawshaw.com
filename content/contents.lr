@@ -1,0 +1,11 @@
+title: Welcome to kylecrawshaw.com!
+---
+body:
+
+Hi! I'm Kyle and I have a genuine interest in all aspects of technology.
+
+```python
+from requests import get
+
+print("Testing pygmentize")
+```

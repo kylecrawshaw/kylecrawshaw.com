@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+  {% for child in this.pagination.items %}
+    {{ render_blog_post(child, from_index=true) }}
+  {% endfor %}
+
+  <!-- {{ render_pagination(this.pagination) }} -->
+  <nav aria-label="...">
+    <ul class="pager">
+      {% if this.pagination.has_prev %}
+        <li class="previous">
+          <a href="{{ this.pagination.prev|url }}">
+            <span aria-hidden="true">&larr;</span> Newer
+          </a>
+        </li>
+      {% endif %}
+
+      {% if this.pagination.has_next %}
+        <li class="next">
+          <a href="{{ this.pagination.next|url }}">
+            Older <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endblock %}
