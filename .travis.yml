@@ -1,0 +1,17 @@
+language: python
+python: 2.7
+before_deploy:
+  - 'curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"'
+  - 'unzip awscli-bundle.zip'
+  - './awscli-bundle/install -b ~/bin/aws'
+  - 'export PATH=~/bin:$PATH'
+install:
+  - "pip install -U pip"
+  - "pip install git+https://github.com/lektor/lektor#egg=Lektor"
+script:
+  - "lektor build"
+  - "test \"$TRAVIS_PULL_REQUEST\" == \"false\" && test \"$TRAVIS_BRANCH\" == \"master\" && lektor deploy s3"
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.cache/lektor/builds
