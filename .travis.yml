@@ -10,10 +10,12 @@ before_deploy:
 install:
   - "pip install -U pip"
   - "pip install git+https://github.com/lektor/lektor#egg=Lektor"
-script: "lektor build"
 
-master:
-  script: "lektor deploy s3"
+script:
+  - "lektor build"
+
+after_success:
+  - "chmod +x deploy.sh && ./deploy.sh"
 
 cache:
   directories:
