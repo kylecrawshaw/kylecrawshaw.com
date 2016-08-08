@@ -1,0 +1,26 @@
+title: Welcome Post
+---
+pub_date: 2016-08-06
+---
+author: Kyle Crawshaw
+---
+body:
+I'm excited to finally start a blog now that I've found a solution that I really
+enjoy working with. I've thought for a long time now that I need to have a place
+to place my thoughts and experiences in IT. Two years ago I decided to begin looking
+for a job in IT after I had been working as a repair tech at my local Apple store
+for a few years. During this time I've met and engaged with some incredibly giving
+and knowledgeable people who have shared so much with the Mac Admin community. After
+I started finding different Mac Admin and Python related blogs I was hooked on learning.
+I have been able to a learn a TON all because so many people in these various
+communities were willing to take the time to share what they've learned through
+their experiences.
+
+I've felt this way for a while, but didn't feel like I had an enjoyable way to manage
+content or even enough good ideas :). Then I found [Lektor](https://getlektor.com)
+and immediately fell in love with it and decided this would be the tool to go with.
+
+
+My goal is to write as frequently as possible and document as much as I can. I hope
+to create a variety of short quick tips and deep dives into other ideas. Thanks for
+following along.
