@@ -6,14 +6,34 @@
     <h2>{{ post.title }}</h2>
   {% endif %}
   <p class="meta">
-    written by
-    {% if post.twitter_handle %}
-      <a href="https://twitter.com/{{ post.twitter_handle}}">{{ post.author or post.twitter_handle }}</a>
-    {% else %}
-      {{ post.author }}
-    {% endif %}
-    on {{ post.pub_date }}
+    <div>
+      <div align="left" style="float: left;">
+        by
+        {% if post.twitter_handle %}
+          <a href="https://twitter.com/{{ post.twitter_handle}}">{{ post.author or post.twitter_handle }}</a>
+        {% else %}
+          {{ post.author }}
+        {% endif %}
+      </div>
+      <div align="right">
+        <i class="fa fa-clock-o" aria-hidden="true"></i> Published {{ post.pub_date }}
+      </div>
+    </div>
   </p>
+  <hr />
+  {% if post.body.toc|count > 0 %}
+    <h4>Contents:</h4>
+    <div class="well well-sm">
+    {% for item in post.body.toc recursive %}
+      <a href="#{{ item.anchor }}">{{ item.title }}</a>
+      {%if item.children %}
+        <br />
+        <span style="margin-left: 2em;">{{ loop(item.children) }}</span>
+      {% endif %}
+    {% endfor %}
+    </div>
+    <hr />
+  {% endif %}
   {{ post.body }}
   </div>
 {% endmacro %}
