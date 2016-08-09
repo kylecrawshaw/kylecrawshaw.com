@@ -16,8 +16,13 @@
         {% endif %}
       </div>
       <div align="right">
-        <i class="fa fa-clock-o" aria-hidden="true"></i> Published {{ post.pub_date }}
+        <i class="fa fa-clock-o" aria-hidden="true"></i> Published {{ post.pub_date|datetimeformat('medium') }}
       </div>
+      {% if post.update_date %}
+      <div align="right">
+        <i class="fa fa-clock-o" aria-hidden="true"></i> Updated {{ post.update_date|datetimeformat('medium') }}
+      </div>
+      {% endif %}
     </div>
   </p>
   <hr />
