@@ -1,6 +1,11 @@
 language: python
 python: 2.7
 
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.cache/lektor/builds
+
 before_deploy:
   - 'curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"'
   - 'unzip awscli-bundle.zip'
@@ -8,16 +13,13 @@ before_deploy:
   - 'export PATH=~/bin:$PATH'
 
 install:
-  - "pip install -U pip"
-  - "pip install git+https://github.com/lektor/lektor#egg=Lektor"
+  - "pip install lektor"
 
 script:
   - "lektor build"
 
-after_success:
-  - "chmod +x deploy.sh && ./deploy.sh"
-
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/.cache/lektor/builds
+deploy:
+  provider: script
+  script: "lektor deploy s3"
+  on:
+    branch: master
