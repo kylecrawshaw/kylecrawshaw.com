@@ -16,3 +16,4 @@ name = S3
 enabled = yes
 target = s3://kylecrawshaw.com
 default = yes
+cloudfront = E2I5ZLRKCOSY9B
