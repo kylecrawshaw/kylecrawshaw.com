@@ -4,4 +4,11 @@ title: Projects
 ---
 body:
 
-<a href="https://github.com/kylecrawshaw/ImagrAdmin">ImagrAdmin</a>
+#### [ImagrAdmin](https://github.com/kylecrawshaw/ImagrAdmin)
+![ImagrAdminIcon](https://github.com/kylecrawshaw/ImagrAdmin/blob/master/ImagrAdmin/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)
+
+ImagrAdmin is a Cocoa app for macOS to create and update [Imagr](https://imagr.io) workflows. Imagr is built 
+around the idea of one main configuration file that contains workflows with a number of different components. 
+Before ImagrAdmin you would have to know what keys you could set for the different workflow components. 
+ImagrAdmin attempts to ease that process so you can focus on creating great scripts and packages to be installed 
+with Imagr.
