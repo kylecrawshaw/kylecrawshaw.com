@@ -9,21 +9,19 @@
       {{ render_blog_post(child, from_index=true) }}
     {% endif %}
   {% endfor %}
-
-  <nav aria-label="...">
+  <nav>
     <ul class="pager">
       {% if this.pagination.has_prev %}
-        <li class="previous">
+        <li class="pager-prev">
           <a href="{{ this.pagination.prev|url }}">
-            <span aria-hidden="true">&larr;</span> Previous
+            <span>&larr;</span> Previous
           </a>
         </li>
       {% endif %}
-
       {% if this.pagination.has_next %}
-        <li class="next">
+        <li class="pager-next">
           <a href="{{ this.pagination.next|url }}">
-            Next <span aria-hidden="true">&rarr;</span>
+            Next <span>&rarr;</span>
           </a>
         </li>
       {% endif %}
