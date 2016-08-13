@@ -4,20 +4,17 @@ title: Projects
 ---
 body:
 
-#### [ImagrAdmin](https://github.com/kylecrawshaw/ImagrAdmin)
-![ImagrAdminIcon](https://raw.githubusercontent.com/kylecrawshaw/ImagrAdmin/master/ImagrAdmin/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)
-
+<div class="card">
+    <img class="card-img-top" src="/static/images/imagr_icon.png" alt="ImagrAdmin icon">
+    <div class="card-block">
+        <h4 class="card-title">ImagrAdmin</h4>
+        <p class="card-text">        
 ImagrAdmin is a Cocoa app for macOS to create and update [Imagr](https://imagr.io) workflows. Imagr is built 
 around the idea of one main configuration file that contains workflows with a number of different components. 
 Before ImagrAdmin you would have to know what keys you could set for the different workflow components. 
 ImagrAdmin attempts to ease that process so you can focus on creating great scripts and packages to be installed 
 with Imagr.
-
-<div class="card">
-    <img class="card-img-top" src="/static/images/imagr_icon.png" alt="ImagrAdmin icon">
-    <div class="card-block">
-        <h4 class="card-title">ImagrAdmin</h4>
-        <p class="card-text">Saweeettt</p>
-        <a href="https://github.com/kylecrawshaw/ImagrAdmin" class="btn btn-primary">View On Github</a>
+        </p>
+        <a href="https://github.com/kylecrawshaw/ImagrAdmin" class="btn btn-primary"><i class="fa fa-lg fa-github"></i> View On Github</a>
     </div>
 </div>

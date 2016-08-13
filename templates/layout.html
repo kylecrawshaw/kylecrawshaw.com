@@ -17,42 +17,39 @@
     <div class="ga-script">{{ generate_google_analytics() }}</div>
     <header>
 
-      <nav class="navbar navbar-darkbg-inverse navbar-fixed-top">
-        <button type="button" class="navbar-toggler hidden-sm-up pull-xs-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+      <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+        <button type="button" class="navbar-toggler hidden-md-up pull-xs-right" data-toggle="collapse" data-target="#navbar">
+            ☰
         </button>
         <a class="navbar-brand" href="/">Kyle Crawshaw</a>
-        <div class="collapse navbar-toggleable-xs" id="navbar" aria-expanded="false" style="height: 1px;">
-              <p class="navbar-text navbar-right social-icons">
-                <a href="https://twitter.com/kylecrawshaw" title="@kylecrawshaw on Twitter" alt="twitter link" rel="me">
-                  <i class="fa fa-lg fa-twitter" alt="twitter-icon"></i>
+        <div class="collapse navbar-toggleable-sm pull-md-none" id="navbar" style="height: 1px;">
+            <div class="navbar-text pull-xs-right social-icons">
+                <a href="https://twitter.com/kylecrawshaw" class="nav-link" title="@kylecrawshaw on Twitter" alt="twitter link" rel="me">
+                    <i class="fa fa-lg fa-twitter" alt="twitter-icon"></i>
                 </a>
                 &nbsp;
-                <a href="https://github.com/kylecrawshaw" title="@kylecrawshaw on GitHub" rel="me">
-                  <i class="fa fa-lg fa-github"></i>
+                <a href="https://github.com/kylecrawshaw" class="nav-link" title="@kylecrawshaw on GitHub" rel="me">
+                    <i class="fa fa-lg fa-github"></i>
                 </a>
                 &nbsp;
                 <a href="https://keybase.io/kylecrawshaw" title="kylecrawshaw on Keybase" rel="me">
-                  <i class="fa fa-key"></i>
+                    <i class="fa fa-key"></i>
                 </a>
                 {% if this.path %}
-                  &nbsp;
-                  <a href="https://github.com/kylecrawshaw/kylecrawshaw.com/tree/master/content{{ this.path.split('@')[0]}}/contents.lr" title="View source on Github">
+                &nbsp;
+                <a href="https://github.com/kylecrawshaw/kylecrawshaw.com/tree/master/content{{ this.path.split('@')[0]}}/contents.lr" title="View source on Github">
                     <i class="fa fa-code"></i>
-                  </a>
+                </a>
                 {% endif %}
-              </p>
-              <ul class="nav navbar-nav pull-xs-left">
-                <li{% if this._path == "/" or this.is_child_of("/blog") %} class="active"{% endif%}>
-                  <a href="/">Blog</a>
-                </li>
+            </div>
+          <ul class="nav navbar-nav pull-xs-left">
+              <li{% if this._path == "/" or this.is_child_of("/blog") %} class="nav-item active"{% else %} class="nav-item"{% endif%}>
+              <a href="/" class="nav-link">Blog</a>
+            </li>
                 {% set nav_links = [['/projects', 'Projects'],['/about', 'About']] %}
                 {% for href, title in nav_links %}
-                  <li{% if this.is_child_of(href) %} class="active"{% endif%}>
-                    <a href="{{ href|url }}">{{ title }}</a>
+                <li{% if this.is_child_of(href) %} class="nav-item active"{% else %} class="nav-item"{% endif%}>
+                    <a href="{{ href|url }}" class="nav-link">{{ title }}</a>
                   </li>
                 {% endfor %}
               </ul>
