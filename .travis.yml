@@ -1,11 +1,6 @@
 language: python
 python: 2.7
 
-cache:
-  directories:
-    - $HOME/.cache/pip
-    - $HOME/.cache/lektor/builds
-
 install:
   - "pip install lektor"
 
@@ -17,3 +12,8 @@ deploy:
   script: "lektor deploy s3"
   on:
     branch: master
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.cache/lektor/builds
