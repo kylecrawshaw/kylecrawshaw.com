@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% from "macros/project.html" import render_project_card %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  {% for child in site.query('/projects') %}
+  {{ render_project_card(child) }}
+  {% endfor %}
+{% endblock %}

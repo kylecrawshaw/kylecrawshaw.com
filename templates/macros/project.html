@@ -1,0 +1,11 @@
+{% macro render_project_card(project) %}
+    <div class="card">
+        <img class="card-img-top" src="{{ project.icon }}" alt="{{ project.title}} icon">
+        <div class="card-block">
+            <h4 class="card-title">{{ project.title }}</h4>
+            <p class="card-text">{{ project.body }}</p>
+            <a href="{{ project.project_url }}" class="btn btn-primary"><i class="fa fa-lg fa-github"></i> View On Github</a>
+        </div>
+    </div>
+  </div>
+{% endmacro %}
