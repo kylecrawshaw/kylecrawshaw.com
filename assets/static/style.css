@@ -47,3 +47,20 @@ body {
 .container .text-muted {
   margin: 20px 0;
 }
+.highlight {
+    background: #ecebeb;
+    padding: 15px;
+    width: auto;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.blog-post {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.narrow {
+    width: 75%;
+}
