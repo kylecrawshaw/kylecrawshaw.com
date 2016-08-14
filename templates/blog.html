@@ -3,7 +3,6 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-
   {% for child in site.query('/blog') %}
     {% if child._model == "blog-post" %}
       {{ render_blog_post(child, from_index=true) }}
