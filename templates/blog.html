@@ -3,9 +3,13 @@
 {% from "macros/pagination.html" import render_pagination %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-  {% for child in site.query('/blog') %}
+  {% set posts = site.query('/blog') %}
+  {% for child in posts %}
     {% if child._model == "blog-post" %}
       {{ render_blog_post(child, from_index=true) }}
+      {% if child != posts[-1] %}
+      <hr class="narrow" />
+      {% endif %}
     {% endif %}
   {% endfor %}
   <nav>
