@@ -2,43 +2,41 @@
   <div class="blog-post">
   {% if from_index %}
     <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    {{ render_pub_date(post) }}
+    {{ post.body|excerpt }}
+    <a href="{{ post|url }}" role="button" class="btn btn-primary">Read More <i class="fa fa-book" aria-hidden="true"></i></a>
   {% else %}
     <h2>{{ post.title }}</h2>
+    {{ render_pub_date(post) }}
+    {% if post.body.toc|count > 0 %}
+      <h6>Contents:</h6>
+      <div class="list-group d-inline-block">
+      {% for item in post.body.toc recursive %}
+        <a href="#{{ item.anchor }}" class="list-group-item list-group-item-action">{{ item.title }}</a>
+        {%if item.children %}
+          {{ loop(item.children) }}
+        {% endif %}
+      {% endfor %}
+      </div>
+      <hr />
+    {% endif %}
+    {{ post.body }}
   {% endif %}
+  </div>
+{% endmacro %}
+
+{% macro render_pub_date(post) %}
   <p class="meta">
     <div>
-      <div align="left" style="float: left;">
-        by
-        {% if post.twitter_handle %}
-          <a href="https://twitter.com/{{ post.twitter_handle}}">{{ post.author or post.twitter_handle }}</a>
-        {% else %}
-          {{ post.author }}
-        {% endif %}
-      </div>
-      <div align="right">
+      <div align="left">
         <i class="fa fa-clock-o" aria-hidden="true"></i> Published {{ post.pub_date|dateformat('medium') }}
       </div>
       {% if post.update_date %}
-      <div align="right">
+      <div align="left">
         <i class="fa fa-clock-o" aria-hidden="true"></i> Updated {{ post.update_date|dateformat('medium') }}
       </div>
       {% endif %}
     </div>
   </p>
   <hr />
-  {% if post.body.toc|count > 0 %}
-    <h4>Contents:</h4>
-    <div class="well well-sm">
-    {% for item in post.body.toc recursive %}
-      <a href="#{{ item.anchor }}">{{ item.title }}</a>
-      {%if item.children %}
-        <br />
-        <span style="margin-left: 2em;">{{ loop(item.children) }}</span>
-      {% endif %}
-    {% endfor %}
-    </div>
-    <hr />
-  {% endif %}
-  {{ post.body }}
-  </div>
 {% endmacro %}
