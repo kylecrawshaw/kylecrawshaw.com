@@ -1,0 +1,97 @@
+title: CommonCrypto and the Swift Bridging Header
+---
+pub_date: 2016-08-14
+---
+author: Kyle Crawshaw
+---
+twitter_handle: kylecrawshaw
+---
+body:
+#### The Backstory
+Recently I started to learn a little bit of Swift in an attempt to build [ImagrAdmin](/projects/imagradmin/),
+but I ran into a road block pretty quickly. How do I create a sha512 encoded string? [Imagr](https://imagr.io)
+uses a sha512 encoded string for the password component at the root level of `imagr_config.plist`. You can check
+out the [Imagr wiki on GitHub](https://github.com/grahamgilbert/imagr/wiki/Workflow-Config#password) for more
+details about this component.
+
+A lot of organizations use this feature of Imagr since they likely have multiple people using their imaging tool
+or even to protect their end users from accidentally wiping their computers. As I mentioned before, I had just started
+to learn Swift so I could build this, but I had literally just started to look at it the week before. Trying to learn
+how Swift does cryptography was not something I had any idea about how to approach or where to begin. With this in
+mind I opted to replicate what Imagr instructs you to do with Python in the wiki, which meant using NSTask to run a
+single line of python and then parse the results.
+
+
+#### Creating the Bridging Header
+Ok, now to the fun stuff. So I had seen previously that I might be able to use some the functionality from the CommonCrypto
+framework, but Apple has not made that available via Swift. This is where the bridging header can be pretty helpful since
+it will allow a Swift developer to call specific functions and constants from C/Objective-C only frameworks. The first thing
+that I needed to do is create a bridging header file. I used the name `ImagrAdmin-Bridging-Header.h` so you may want to use something in
+the form of `<ProjectName>-Bridging-Header.h` if you were to create on in your project.
+
+##### 1. Create a New File
+<img src="new_file_dialog.png" class="img-fluid" alt="New file dialog screenshot" />
+
+**ImagrAdmin-Bridging-Header.h**
+
+The bridging header is a pretty simple thing really. You basically just use it as if you were importing 
+Objective-C framework into an Objective-C application and then you can call functions and classes in that
+framework from Swift directly. I have only used this process for this one specific task so I'm not sure
+what the limitations are (there must be some).
+```objc
+#ifndef test_bridging_header_h
+#define test_bridging_header_h
+
+#import <CommonCrypto/CommonCrypto.h>
+
+#endif /* test_bridging_header_h */
+```
+
+##### The Not So Amazing Way
+```swift
+import Foundation
+
+func hashPassword(password: String) -> String {
+   let task = NSTask()
+   task.launchPath = "/usr/bin/python"
+   task.arguments = ["-c", "import hashlib; print hashlib.sha512(\"\(password)\").hexdigest()"]
+
+   let stdOutput = NSPipe()
+   let outputHandler = stdOutput.fileHandleForReading
+   task.standardOutput = stdOutput
+
+   task.launch()
+
+   // Process the task stdout
+   let outputString = outputHandler.availableData
+   let stringRead = NSString(data: outputString, encoding: NSUTF8StringEncoding) as! String
+   let output = stringRead.stringByReplacingOccurrencesOfString(
+       "\n", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+
+   return output
+}
+```
+
+This seemed silly, but I figured it worked and all of the examples for accomplishing the same thing in Swift were either 
+unnecessarily complex or just made no sense to me. Luckily, I have one of the best resources I could ask for at my 
+disposal, the #macadmins Slack team and @groob kindly pointed me toward a 
+[post on Stack Overflow](https://stackoverflow.com/questions/25761344/how-to-crypt-string-to-sha1-with-swift).
+I had been hoping that noone would notice my "temporary" workaround, but he noticed this immediately within hours of me
+posting my code. This was awesome and was yet another reason why open source software and the community around it can
+be such an amazing thing. My code was visible for others to critique and instead of scoffing at me for taking a shortcut
+he pointed me in the right direction.
+
+
+##### Creating an Extension for Swift String Objects
+
+```swift
+extension String {
+    func sha512() -> String {
+        let data = self.dataUsingEncoding(NSUTF8StringEncoding)!
+        var digest = [UInt8](count:Int(CC_SHA512_DIGEST_LENGTH), repeatedValue: 0)
+        CC_SHA512(data.bytes, CC_LONG(data.length), &digest)
+        let hexBytes = digest.map { String(format: "%02hhx", $0) }
+        return hexBytes.joinWithSeparator("")
+    }
+}
+```

@@ -9,14 +9,18 @@
     <h2>{{ post.title }}</h2>
     {{ render_pub_date(post) }}
     {% if post.body.toc|count > 0 %}
-      <h6>Contents:</h6>
-      <div class="list-group d-inline-block">
-      {% for item in post.body.toc recursive %}
-        <a href="#{{ item.anchor }}" class="list-group-item list-group-item-action">{{ item.title }}</a>
-        {%if item.children %}
-          {{ loop(item.children) }}
-        {% endif %}
-      {% endfor %}
+      <div class="clickable" data-toggle="collapse" id="contents-header" data-target=".toc">
+          <a href="#"><h6>Contents: <i class="fa fa-caret-down" aria-hidden="true"></i></h6></a>
+      </div>
+      <div class="collapse in budgets toc">
+          <div class="list-group d-inline-block">
+          {% for item in post.body.toc recursive %}
+            <a href="#{{ item.anchor }}" class="list-group-item list-group-item-action">{{ item.title }}</a>
+            {%if item.children %}
+              {{ loop(item.children) }}
+            {% endif %}
+          {% endfor %}
+          </div>
       </div>
       <hr />
     {% endif %}
