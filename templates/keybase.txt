@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/kylecrawshaw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kylecrawshaw.com
+  * I am kylecrawshaw (https://keybase.io/kylecrawshaw) on keybase.
+  * I have a public key ASA50msAoWk7253C7ID-_r4eUISSx72nFCTHw_ZBcIa1qgo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016dc47bcd10cbe2c29c733f626d27359eecef12349dedc308801ac178b56def180a",
+            "host": "keybase.io",
+            "kid": "012039d26b00a1693bdb9dc2ec80fefebe1e508492c7bda71424c7c3f6417086b5aa0a",
+            "uid": "888c07e5fd1adc5e3c2b9d13401ac019",
+            "username": "kylecrawshaw"
+        },
+        "service": {
+            "hostname": "kylecrawshaw.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.16"
+    },
+    "ctime": 1471830198,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1471830180,
+        "hash": "2a6deeed4f6b3518e2249b55cb2327fd4f1b3d301e7927815d3eb80555f68eed907189d39494c53e5fc1c6d1414b53266c03ec98b42be07f5e205e3e18d1c675",
+        "seqno": 594058
+    },
+    "prev": "16c3fb3daa13ce66efa7ccd8375f53c0559e940e1f9498080acf03cbdca33adc",
+    "seqno": 24,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOdJrAKFpO9udwuyA/v6+HlCEkse9pxQkx8P2QXCGtaoKp3BheWxvYWTFAv17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNmRjNDdiY2QxMGNiZTJjMjljNzMzZjYyNmQyNzM1OWVlY2VmMTIzNDlkZWRjMzA4ODAxYWMxNzhiNTZkZWYxODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzlkMjZiMDBhMTY5M2JkYjlkYzJlYzgwZmVmZWJlMWU1MDg0OTJjN2JkYTcxNDI0YzdjM2Y2NDE3MDg2YjVhYTBhIiwidWlkIjoiODg4YzA3ZTVmZDFhZGM1ZTNjMmI5ZDEzNDAxYWMwMTkiLCJ1c2VybmFtZSI6Imt5bGVjcmF3c2hhdyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia3lsZWNyYXdzaGF3LmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE2In0sImN0aW1lIjoxNDcxODMwMTk4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzE4MzAxODAsImhhc2giOiIyYTZkZWVlZDRmNmIzNTE4ZTIyNDliNTVjYjIzMjdmZDRmMWIzZDMwMWU3OTI3ODE1ZDNlYjgwNTU1ZjY4ZWVkOTA3MTg5ZDM5NDk0YzUzZTVmYzFjNmQxNDE0YjUzMjY2YzAzZWM5OGI0MmJlMDdmNWUyMDVlM2UxOGQxYzY3NSIsInNlcW5vIjo1OTQwNTh9LCJwcmV2IjoiMTZjM2ZiM2RhYTEzY2U2NmVmYTdjY2Q4Mzc1ZjUzYzA1NTllOTQwZTFmOTQ5ODA4MGFjZjAzY2JkY2EzM2FkYyIsInNlcW5vIjoyNCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAHe9pty+fVPzXSkgcuCWzomFyFgvpUH/vdIGHCs1Ktm28IfUZjXu5HzXg8nEzv0OvouSt5w2utarSom5gPhMsCqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgL98TP4kWfnB84SHwX/CXELQ1nQWdQZnwzLKy+6M4MQyjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kylecrawshaw
+
+==================================================================
