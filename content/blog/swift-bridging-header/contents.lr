@@ -30,24 +30,51 @@ that I needed to do is create a bridging header file. I used the name `ImagrAdmi
 the form of `<ProjectName>-Bridging-Header.h` if you were to create on in your project.
 
 ##### 1. Create a New File
+
+You can name the file pretty much anything you want, but I went with `ImagrAdmin-Bridging-Header.h` since
+it makes sense to use names that are clear. 
+
 <img src="new_file_dialog.png" class="img-fluid" alt="New file dialog screenshot" />
+
+##### 2. Add Imports to the Bridging Header
+
+When you create that file it'll have the contents below and you can import any other header files 
+here. All I added for my app was `#import <CommonCrypto/CommonCrypto.h>`. There are likely some 
+limitations to the bridging header, but it has proved helpful for this task at least.
 
 **ImagrAdmin-Bridging-Header.h**
 
-The bridging header is a pretty simple thing really. You basically just use it as if you were importing 
-Objective-C framework into an Objective-C application and then you can call functions and classes in that
-framework from Swift directly. I have only used this process for this one specific task so I'm not sure
-what the limitations are (there must be some).
 ```objc
-#ifndef test_bridging_header_h
-#define test_bridging_header_h
+#ifndef ImagrAdmin_Bridging_Header_h
+#define ImagrAdmin_Bridging_Header_h
 
 #import <CommonCrypto/CommonCrypto.h>
 
-#endif /* test_bridging_header_h */
+#endif /* ImagrAdmin_Bridging_Header_h */
 ```
 
+##### 3. Update the Application's Build Settings
+This is the most important step and really the part that actually makes this work. Your application needs
+to know that the header file that you've created has a specific purpose, otherwise it just looks like a
+normal header file.
+
+Navigate to the **Build Settings** and then find the section called **Swift Compiler - Code Generation**.
+Here you can add the path to your bridging header and then when the application is compiled it will include
+frameworks listed in that file. Pretty neat!
+
+<img src="build_settings.png" class="img-fluid" />
+
 ##### The Not So Amazing Way
+
+This seemed silly, but I figured it worked and all of the examples for accomplishing the same thing in Swift were either 
+unnecessarily complex or just made no sense to me. Luckily, I have one of the best resources I could ask for at my 
+disposal, the #macadmins Slack team and @groob kindly pointed me toward a 
+[post on Stack Overflow](https://stackoverflow.com/questions/25761344/how-to-crypt-string-to-sha1-with-swift).
+I had been hoping that noone would notice my "temporary" workaround, but he noticed this immediately within hours of me
+posting my code. This was awesome and was yet another reason why open source software and the community around it can
+be such an amazing thing. My code was visible for others to critique and instead of scoffing at me for taking a shortcut
+he pointed me in the right direction.
+
 ```swift
 import Foundation
 
@@ -72,16 +99,6 @@ func hashPassword(password: String) -> String {
 }
 ```
 
-This seemed silly, but I figured it worked and all of the examples for accomplishing the same thing in Swift were either 
-unnecessarily complex or just made no sense to me. Luckily, I have one of the best resources I could ask for at my 
-disposal, the #macadmins Slack team and @groob kindly pointed me toward a 
-[post on Stack Overflow](https://stackoverflow.com/questions/25761344/how-to-crypt-string-to-sha1-with-swift).
-I had been hoping that noone would notice my "temporary" workaround, but he noticed this immediately within hours of me
-posting my code. This was awesome and was yet another reason why open source software and the community around it can
-be such an amazing thing. My code was visible for others to critique and instead of scoffing at me for taking a shortcut
-he pointed me in the right direction.
-
-
 ##### Creating an Extension for Swift String Objects
 
 ```swift
@@ -95,3 +112,10 @@ extension String {
     }
 }
 ```
+
+The approach above is far simpler and it uses an extension to the `String` class. The usage between the 
+two approaches does change all that much. Instead of using `let hashedPass = hashPassword("supersecretpassword")`
+I would use `let hashedPass = "supersecretpassword".sha512()`. This just feels like a nicer interface.
+
+If there are errors or things you think should be changed about this post, you can open up a PR on Github by clicking
+the <i class="fa fa-code" aria-hidden="true"></i> in the navigation bar.
