@@ -51,4 +51,84 @@ appending to this document.
 
 View my publicly-auditable identity here: https://keybase.io/kylecrawshaw
 
+====================================================================================================================================
+https://keybase.io/kylecrawshaw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kylecrawshaw.com
+  * I am kylecrawshaw (https://keybase.io/kylecrawshaw) on keybase.
+  * I have a public key with fingerprint BE60 5B1D BA6E 7609 E03D  9D20 D3FD F399 2148 D5F6
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016dc47bcd10cbe2c29c733f626d27359eecef12349dedc308801ac178b56def180a",
+            "fingerprint": "be605b1dba6e7609e03d9d20d3fdf3992148d5f6",
+            "host": "keybase.io",
+            "key_id": "d3fdf3992148d5f6",
+            "kid": "010145a82cb93e906fde63ebf97a39c269d5cb3c00339a32950aa29d11094c3639b10a",
+            "uid": "888c07e5fd1adc5e3c2b9d13401ac019",
+            "username": "kylecrawshaw"
+        },
+        "revoke": {
+            "sig_ids": [
+                "cde57053a405a935ef9e8046772e1a9475d80bab05864c536a9191e81caf8e1b0f"
+            ]
+        },
+        "service": {
+            "hostname": "kylecrawshaw.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1472873215,
+    "expire_in": 157680000,
+    "prev": "95d0e58bba263d664481d820182fdb3eb91e7869d922c737e4883bd7132aaddf",
+    "seqno": 41,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.56
+Comment: https://keybase.io/crypto
+
+yMOxAnicbZJ9TJVVHMevgoA0CDHf0KU9Tpd0Yec853k7Nyp0mdiYpSg6QO/Oc855
+4BG4z+3ey0VUJqMiFNmKpRvOKHNItXIu8AWaTkCdpZYv9GKm4suUwbSciF2G2vOw
+Wv94/jk753x/3/P5vRxLiHLFj7nw6H7jC1k/D4051TlS5lr5w4InGwTdYhWCZ4NQ
+zEc3XsJ4MOQtNpngEQAEUGFUUnXKIKA6F6mIqYqQoYgKE1UkY84pN6CIJMw4owho
+GoCEQlXTZYXZLxogglswTF8hD/gDpi9k2+pcAbIOmU4UrioAc4AYZiJgyGAGwliE
+ksZkQ7EDi6ygE2HD6STI003LvrMP3lG8p+j/55ZkoolUx4hjoBiMK4jrBlYJwlRU
+MJOpjigACGGCRCwDQkTMIARYokhBWIej3GWjdpqmUaBy2WCQMCpzREXdFiPJSRVA
+7AiDPOAjpdxhrSjhNEDKg0WkXKh0CwEetoq5U9ugWWiDBwVPvkAZl1UgIyIBmWAk
+cwNzDUiKqoocEiypMtOATnQga4pEZaQQDDHkGqTE0DjUgSGstr3tX8MmHTV3KvUU
+gnRqldp8/oAVsqhVYr8WhUL+oMchC1X4HXk5173/Gnl108fsXtkRYR4ImpZP8EBb
+SUOm4wwlVdRUJELZLfB1fjPAvaajkFVFA/Zy/uFh2xLLDHBZ03UiKogpiiRpkGki
+gJpoMN3uhJ2LqtltwKJoz5PKJU1DOlMhEglhzBCc1N7xWYJHgjYnKbQ97er5SKgs
+wIXKrs6CaNeYeFfMuLHOELvixyf9N9pHmpJctd7lsdl/XI7sPLPtVG90yvL93dfG
+TUr89dPc5MXTm/rzKn65ZaydcGJ10zz/39vb93g3d7jn7tvUkVLzQUbLQK97YOlZ
+F1ibdizzvfK9u3MijQkzju64smda+eDIstxGNbWuQpq/9N6CXDk5/0jR1fvL1j3M
+qKnKicwvOrO4MXp/d7d3vVvs27YoMav9xMR57dVxz/GNB157a8b62ujOcGnarOPx
+087tXikFHxXK7+bmpbacTJRuz642N7/uudcWWxo37/KtkVfTPn7YGtu7s3k1ySGV
+7iVRs76O1LV8VSU+k3/DZQ0OpH7Ikuvvpg3nBR7P1TfdvHNcetI8vaD98JS3fzOX
+XEzicZ7ob4aPTp2dnzBp7faxc3YMje+/5I0KN/hupveMfWPFil09Ra3NtcmrDhYv
+bN3X9WNKz+lnI3s7Pml4fDwz4U9/gaY2jFzc11m55cGSe0lD38ek+Yb6t1yYMLgu
+EpdQvUaj57tObiO45MXbU651tCmHsudkTC7r+6ti4uSsNdMbvuytq9t1+rM19Ttm
+tp2/Ol+40R2u2pqWH3up5+T6bw/6f99SVZPw/nc/XVdSm3b2n/38gJTSMY28XF7r
+tzLPRcXMrH0+vTuSM7UuszADrRrOOBY13HJ3q+dQ/uYVdyZXv5JsXSEPXzpVf72+
+vi1mkbeGfKRf2vhFX+eD7FsLD9f0gTezBwLbB5sT/wG13+A/
+=1YPQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kylecrawshaw
+
 ==================================================================
