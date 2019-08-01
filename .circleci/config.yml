@@ -50,7 +50,7 @@ jobs:
       - save_cache:
           paths:
             - ./venv
-            - ./.cache
+            - ~/.cache
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
   deploy:
@@ -98,7 +98,7 @@ jobs:
       - save_cache:
           paths:
             - ./venv
-            - ./.cache
+            - ~/.cache
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
 
