@@ -70,7 +70,7 @@ resource "aws_cloudfront_distribution" "www_distribution" {
       }
     }
   }
-  aliases = ["${var.root_domain_name}"]
+  aliases = ["${var.root_domain_name}", "${var.www_domain_name}"]
 
   restrictions {
     geo_restriction {
@@ -85,6 +85,23 @@ resource "aws_cloudfront_distribution" "www_distribution" {
   }
 }
 
+
+resource "aws_route53_zone" "zone" {
+  name = "${var.root_domain_name}"
+}
+
+// This Route53 record will point at our CloudFront distribution.
+resource "aws_route53_record" "www" {
+  zone_id = "${aws_route53_zone.zone.zone_id}"
+  name    = "${var.root_domain_name}"
+  type    = "A"
+
+  alias {
+    name                   = "${aws_cloudfront_distribution.www_distribution.domain_name}"
+    zone_id                = "${aws_cloudfront_distribution.www_distribution.hosted_zone_id}"
+    evaluate_target_health = false
+  }
+}
 #resource "aws_cloudfront_distribution" "s3_distribution" {
 #  origin {
 #    domain_name = "${var.bucket_name}.s3.amazonaws.com"
