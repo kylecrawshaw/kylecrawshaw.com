@@ -69,6 +69,6 @@ jobs:
       - checkout
       - run:
           name: Deploy Lektor to S3
-        command:|
+        command: |
           . venv/bin/activate
           lektor deploy
