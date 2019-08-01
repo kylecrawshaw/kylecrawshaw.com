@@ -93,7 +93,7 @@ jobs:
           name: lektor deploy s3
           command: |
             . venv/bin/activate
-            lektor deploy
+            lektor deploy s3
 
       - save_cache:
           paths:
