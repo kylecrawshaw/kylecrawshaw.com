@@ -1,6 +1,6 @@
 [project]
 name = kylecrawshaw.com
-url = https://kylecrawshaw.com
+url = https://www.kylecrawshaw.com
 url_style = absolute
 
 [packages]
@@ -15,6 +15,6 @@ lektor-markdown-excerpt = 0.1
 [servers.s3]
 name = S3
 enabled = yes
-target = s3://kylecrawshaw.com
+target = s3://www.kylecrawshaw.com
 default = yes
 cloudfront = E2I5ZLRKCOSY9B
