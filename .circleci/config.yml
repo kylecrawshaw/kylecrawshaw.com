@@ -70,6 +70,8 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - attach_workspace:
+          at: /home/circleci/.cache
       - checkout
       # Download and cache dependencies
       - restore_cache:
@@ -79,12 +81,12 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run:
-          name: install dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
+#      - run:
+#          name: install dependencies
+#          command: |
+#            python3 -m venv venv
+#            . venv/bin/activate
+#            pip install -r requirements.txt
 
 
 
