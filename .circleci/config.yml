@@ -52,8 +52,11 @@ jobs:
             - ./venv
             - ~/.cache
           key: v1-dependencies-{{ checksum "requirements.txt" }}
-
-  deploy:
+      - persist_to_workspace:
+          root: /home/circleci/.cache/
+          paths:
+            - lektor
+  deploy-site:
     docker:
       # specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
@@ -107,7 +110,7 @@ workflows:
   build-deploy:
     jobs:
       - build
-      - deploy:
+      - deploy-site:
           requires:
             - build
           filters:

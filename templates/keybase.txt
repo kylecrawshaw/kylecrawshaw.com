@@ -6,124 +6,78 @@ I hereby claim:
 
   * I am an admin of https://kylecrawshaw.com
   * I am kylecrawshaw (https://keybase.io/kylecrawshaw) on keybase.
-  * I have a public key ASA50msAoWk7253C7ID-_r4eUISSx72nFCTHw_ZBcIa1qgo
-
-To do so, I am signing this object:
-
-{
-    "body": {
-        "key": {
-            "eldest_kid": "01016dc47bcd10cbe2c29c733f626d27359eecef12349dedc308801ac178b56def180a",
-            "host": "keybase.io",
-            "kid": "012039d26b00a1693bdb9dc2ec80fefebe1e508492c7bda71424c7c3f6417086b5aa0a",
-            "uid": "888c07e5fd1adc5e3c2b9d13401ac019",
-            "username": "kylecrawshaw"
-        },
-        "service": {
-            "hostname": "kylecrawshaw.com",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
-    },
-    "client": {
-        "name": "keybase.io go client",
-        "version": "1.0.16"
-    },
-    "ctime": 1471830198,
-    "expire_in": 504576000,
-    "merkle_root": {
-        "ctime": 1471830180,
-        "hash": "2a6deeed4f6b3518e2249b55cb2327fd4f1b3d301e7927815d3eb80555f68eed907189d39494c53e5fc1c6d1414b53266c03ec98b42be07f5e205e3e18d1c675",
-        "seqno": 594058
-    },
-    "prev": "16c3fb3daa13ce66efa7ccd8375f53c0559e940e1f9498080acf03cbdca33adc",
-    "seqno": 24,
-    "tag": "signature"
-}
-
-which yields the signature:
-
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgOdJrAKFpO9udwuyA/v6+HlCEkse9pxQkx8P2QXCGtaoKp3BheWxvYWTFAv17ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNmRjNDdiY2QxMGNiZTJjMjljNzMzZjYyNmQyNzM1OWVlY2VmMTIzNDlkZWRjMzA4ODAxYWMxNzhiNTZkZWYxODBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMzlkMjZiMDBhMTY5M2JkYjlkYzJlYzgwZmVmZWJlMWU1MDg0OTJjN2JkYTcxNDI0YzdjM2Y2NDE3MDg2YjVhYTBhIiwidWlkIjoiODg4YzA3ZTVmZDFhZGM1ZTNjMmI5ZDEzNDAxYWMwMTkiLCJ1c2VybmFtZSI6Imt5bGVjcmF3c2hhdyJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoia3lsZWNyYXdzaGF3LmNvbSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjE2In0sImN0aW1lIjoxNDcxODMwMTk4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE0NzE4MzAxODAsImhhc2giOiIyYTZkZWVlZDRmNmIzNTE4ZTIyNDliNTVjYjIzMjdmZDRmMWIzZDMwMWU3OTI3ODE1ZDNlYjgwNTU1ZjY4ZWVkOTA3MTg5ZDM5NDk0YzUzZTVmYzFjNmQxNDE0YjUzMjY2YzAzZWM5OGI0MmJlMDdmNWUyMDVlM2UxOGQxYzY3NSIsInNlcW5vIjo1OTQwNTh9LCJwcmV2IjoiMTZjM2ZiM2RhYTEzY2U2NmVmYTdjY2Q4Mzc1ZjUzYzA1NTllOTQwZTFmOTQ5ODA4MGFjZjAzY2JkY2EzM2FkYyIsInNlcW5vIjoyNCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAHe9pty+fVPzXSkgcuCWzomFyFgvpUH/vdIGHCs1Ktm28IfUZjXu5HzXg8nEzv0OvouSt5w2utarSom5gPhMsCqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgL98TP4kWfnB84SHwX/CXELQ1nQWdQZnwzLKy+6M4MQyjdGFnzQICp3ZlcnNpb24B
-
-And finally, I am proving ownership of this host by posting or
-appending to this document.
-
-View my publicly-auditable identity here: https://keybase.io/kylecrawshaw
-
-====================================================================================================================================
-https://keybase.io/kylecrawshaw
---------------------------------------------------------------------
-
-I hereby claim:
-
-  * I am an admin of https://kylecrawshaw.com
-  * I am kylecrawshaw (https://keybase.io/kylecrawshaw) on keybase.
   * I have a public key with fingerprint BE60 5B1D BA6E 7609 E03D  9D20 D3FD F399 2148 D5F6
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "01016dc47bcd10cbe2c29c733f626d27359eecef12349dedc308801ac178b56def180a",
-            "fingerprint": "be605b1dba6e7609e03d9d20d3fdf3992148d5f6",
-            "host": "keybase.io",
-            "key_id": "d3fdf3992148d5f6",
-            "kid": "010145a82cb93e906fde63ebf97a39c269d5cb3c00339a32950aa29d11094c3639b10a",
-            "uid": "888c07e5fd1adc5e3c2b9d13401ac019",
-            "username": "kylecrawshaw"
-        },
-        "revoke": {
-            "sig_ids": [
-                "cde57053a405a935ef9e8046772e1a9475d80bab05864c536a9191e81caf8e1b0f"
-            ]
-        },
-        "service": {
-            "hostname": "kylecrawshaw.com",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01016dc47bcd10cbe2c29c733f626d27359eecef12349dedc308801ac178b56def180a",
+      "fingerprint": "be605b1dba6e7609e03d9d20d3fdf3992148d5f6",
+      "host": "keybase.io",
+      "key_id": "d3fdf3992148d5f6",
+      "kid": "010145a82cb93e906fde63ebf97a39c269d5cb3c00339a32950aa29d11094c3639b10a",
+      "uid": "888c07e5fd1adc5e3c2b9d13401ac019",
+      "username": "kylecrawshaw"
     },
-    "ctime": 1472873215,
-    "expire_in": 157680000,
-    "prev": "95d0e58bba263d664481d820182fdb3eb91e7869d922c737e4883bd7132aaddf",
-    "seqno": 41,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1565014409,
+      "hash_meta": "9c97c3047cd01e749f59f9fa88008f78a4869cf1b87de813d7781549aab072d9",
+      "seqno": 5942217
+    },
+    "revoke": {
+      "sig_ids": [
+        "0a65eaa418e26d95bd44646d2420f6c113e930bf30c1ee9b9e44979c4e62e4150f"
+      ]
+    },
+    "service": {
+      "hostname": "kylecrawshaw.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1565014410,
+  "expire_in": 157680000,
+  "prev": "543c0b7989adeff43b7fbde34cb67b7b2013a6ad7a48ab8a923f242c7e4dfa3d",
+  "seqno": 74,
+  "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.56
+Version: Keybase OpenPGP v2.1.3
 Comment: https://keybase.io/crypto
 
-yMOxAnicbZJ9TJVVHMevgoA0CDHf0KU9Tpd0Yec853k7Nyp0mdiYpSg6QO/Oc855
-4BG4z+3ey0VUJqMiFNmKpRvOKHNItXIu8AWaTkCdpZYv9GKm4suUwbSciF2G2vOw
-Wv94/jk753x/3/P5vRxLiHLFj7nw6H7jC1k/D4051TlS5lr5w4InGwTdYhWCZ4NQ
-zEc3XsJ4MOQtNpngEQAEUGFUUnXKIKA6F6mIqYqQoYgKE1UkY84pN6CIJMw4owho
-GoCEQlXTZYXZLxogglswTF8hD/gDpi9k2+pcAbIOmU4UrioAc4AYZiJgyGAGwliE
-ksZkQ7EDi6ygE2HD6STI003LvrMP3lG8p+j/55ZkoolUx4hjoBiMK4jrBlYJwlRU
-MJOpjigACGGCRCwDQkTMIARYokhBWIej3GWjdpqmUaBy2WCQMCpzREXdFiPJSRVA
-7AiDPOAjpdxhrSjhNEDKg0WkXKh0CwEetoq5U9ugWWiDBwVPvkAZl1UgIyIBmWAk
-cwNzDUiKqoocEiypMtOATnQga4pEZaQQDDHkGqTE0DjUgSGstr3tX8MmHTV3KvUU
-gnRqldp8/oAVsqhVYr8WhUL+oMchC1X4HXk5173/Gnl108fsXtkRYR4ImpZP8EBb
-SUOm4wwlVdRUJELZLfB1fjPAvaajkFVFA/Zy/uFh2xLLDHBZ03UiKogpiiRpkGki
-gJpoMN3uhJ2LqtltwKJoz5PKJU1DOlMhEglhzBCc1N7xWYJHgjYnKbQ97er5SKgs
-wIXKrs6CaNeYeFfMuLHOELvixyf9N9pHmpJctd7lsdl/XI7sPLPtVG90yvL93dfG
-TUr89dPc5MXTm/rzKn65ZaydcGJ10zz/39vb93g3d7jn7tvUkVLzQUbLQK97YOlZ
-F1ibdizzvfK9u3MijQkzju64smda+eDIstxGNbWuQpq/9N6CXDk5/0jR1fvL1j3M
-qKnKicwvOrO4MXp/d7d3vVvs27YoMav9xMR57dVxz/GNB157a8b62ujOcGnarOPx
-087tXikFHxXK7+bmpbacTJRuz642N7/uudcWWxo37/KtkVfTPn7YGtu7s3k1ySGV
-7iVRs76O1LV8VSU+k3/DZQ0OpH7Ikuvvpg3nBR7P1TfdvHNcetI8vaD98JS3fzOX
-XEzicZ7ob4aPTp2dnzBp7faxc3YMje+/5I0KN/hupveMfWPFil09Ra3NtcmrDhYv
-bN3X9WNKz+lnI3s7Pml4fDwz4U9/gaY2jFzc11m55cGSe0lD38ek+Yb6t1yYMLgu
-EpdQvUaj57tObiO45MXbU651tCmHsudkTC7r+6ti4uSsNdMbvuytq9t1+rM19Ttm
-tp2/Ol+40R2u2pqWH3up5+T6bw/6f99SVZPw/nc/XVdSm3b2n/38gJTSMY28XF7r
-tzLPRcXMrH0+vTuSM7UuszADrRrOOBY13HJ3q+dQ/uYVdyZXv5JsXSEPXzpVf72+
-vi1mkbeGfKRf2vhFX+eD7FsLD9f0gTezBwLbB5sT/wG13+A/
-=1YPQ
+yMQEAnicbZN7bFRFFMa35WFaMa0pj6gQ6a0VhaXM3Lmv2SAtxCKKBBpEEGiXuTNz
+t0vb3XV3W1qgEh6ttBSK0CAgj4KlBBIa0VItogSCCGJMC4upBaFGKUghyKuwUtS5
+jYbE8NfN3PnOd775nZljT/VxxMeceXh7U/Kks90xp46+V+jInoQrF0mmn5VIrkVS
+Hu/98HzGQ2F3npdJLglAADVGFd2kDAJqcpnKmOoIWZqsMVlHKuaccgvKSMGMM4qA
+YQBIKNQNU9WY2DEAkZyS5fV5eDAQ9PrCwtbkGlBNyEyicV0DmAPEMJMBQxazEMYy
+VAymWpoozPWH7AoRziQhnub1i39i4e6N9xj9o9yKSgyZmhhxDDSLcQ1x08I6QZjK
+GmYqNREFACFMkIxVQIiMGYQAKxRpCJuwN3dhr51hGBToXLUYJIyqHFHZFGKk2EcF
+ENvCEA/6SAG3s5bkcxokC0K5ZIFU6pQKeDAvn7uDfn/YBkzDXlsGVU0VIRWAxSFJ
+KNddwMNEVGOKdYFR0SkDkOsKtlRsYYsIrsCwdIMohoapBU1DZ9yAiOm6AVUFE2IC
+XWZ2lhB/1+eXXCpWZBnqIkGQF/nzuN085PUIdCHJNUcCRFM5IQo0uJglVk2mKJoi
+pqrIwNIohAIcAqaFAIWcYxNzRcE6pgrXZK5AFVhSdqndLFjkpb3m9qwewyCN+gtE
+qkDQH/ZTf77YzQ2HAyGXzSZcErDlC7jp/tfIbXp9TNwWUVHEgyGv3ydYCeX/sEHg
+lHhxwBvkbq+tUHVNAALA7sOLhKWqiPGaOjYwEdfQUpCpWybjSKGmppu6KQOIiEaY
+LoAS0yBYRpY4OtW5wiyC2COOuiJyEo/wFPR8JFwY5FLp0SNz+zpi4h39+8Xaz8gR
+H5f43+OipYmOsrlrLibfHvLM2AfpfyW1zG8sq9d2b7lXve/vaPOXG8Z8Ha+tjNFX
+pH4RnffTtJn1PxQ0hSNFe3t2XinfNmPL/sHnUvrOHjLomzcvJHeuObBpbGTVsZbn
+t69ddrF7dE7Zs12yp7kjGrjrW3fwTs2UrvHnv7q380L4tfSKxGlRV3nOvLblVsKN
+5oy3FzZEO4sPdlct3LlfSW1oWzOM3Vk/5cHGplhYtOzMndsZ38GhVS0rfd5r8yPf
+38x6elXrxL1bL9XjFw9cn1LV/oRnctfVUYc2P5TPTWjK27XhVuOh2IRT62ZVbK9c
+OG7J1cHaK+cde66dbohrmrljRPIbsCq3bszZyL61bTfvntySerwwqe3w6RdSIoGm
+fkful2fLnw7d3empnl05KHN6Zt6qkc1qMEtxdZTmzE09Wdcx8f0/bs2eU9wasy//
+plQ7c3j7A6NkxYyXd/zKXqpurT5+YtvoWLnvB0kfzqpNoQN+T3RWoG2ZA0/4zwQ9
+U5N+OexJq63NXB2uyaJV7buun+2pOLd+2IDSgR8dWOacuqjTE7d0x/KN5Tfupvd0
+0ZbXp/fr5hmDRzx5q91Mr4leqesf4zyZ9fmPVZsXj0LRkR87l/xZb+xJi9deLfzs
+28uzLjY6SULOc5cmlCQUD1/dZ9yJhria1ozIJxtGd4Tqt/YsbUz5ecCujpXZ93Mc
+Qy6PfytSh95puxCZvOm3xbDsH8dbEI0=
+=4ur/
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
